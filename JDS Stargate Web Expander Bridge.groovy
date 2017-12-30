@@ -32,3 +32,13 @@
  *  ----------------
  *  
  */
+definition(
+    name: "JDS Stargate Web Exander Bridge",
+    namespace: "ronv42",
+    author: "ronv42",
+    description: "Connect X10 switches and dimmers to SmartThings. Requires JDS Stargate Web Expander.",
+    category: "My Apps",
+    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
+    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
+    //oauth: true
+)
