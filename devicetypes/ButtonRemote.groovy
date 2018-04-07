@@ -1,5 +1,5 @@
 /**
- *  Copyright 2015 SmartThings
+ *  Copyright 2018 Ron Vargo
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  *  in compliance with the License. You may obtain a copy of the License at:
@@ -12,7 +12,7 @@
  *
  */
 metadata {
-	definition (name: "Simulated Minimote", namespace: "smartthings/testing", author: "SmartThings") {
+	definition (name: "Simulated Button Remote", namespace: "RonV42/smartthings", author: "RonV42") {
 		capability "Actuator"
 		capability "Button"
 		capability "Holdable Button"
