@@ -12,7 +12,7 @@
  *
  */
 metadata {
-	definition (name: "Simulated Button Remote", namespace: "RonV42/smartthings", author: "RonV42") {
+	definition (name: "Multi Button Remote", namespace: "RonV42/smartthings", author: "RonV42") {
 		capability "Actuator"
 		capability "Button"
 		capability "Holdable Button"
