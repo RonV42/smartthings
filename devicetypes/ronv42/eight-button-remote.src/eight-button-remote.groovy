@@ -43,39 +43,51 @@ metadata {
 		status "button 8 pushed":  "command: 2001, payload: 8D"
 		status "wakeup":  "command: 8407, payload: "
 	}
+    
+    preferences {
+		input("LabelButton1", "string", title:"Button 1 Label", description: "Enter Button 1 Label", required: true, displayDuringSetup: false)
+		input("LabelButton2", "string", title:"Button 2 Label", description: "Enter Button 2 Label", required: true, displayDuringSetup: false)
+		input("LabelButton3", "string", title:"Button 3 Label", description: "Enter Button 3 Label", required: true, displayDuringSetup: false)
+		input("LabelButton4", "string", title:"Button 4 Label", description: "Enter Button 4 Label", required: true, displayDuringSetup: false)
+		input("LabelButton5", "string", title:"Button 5 Label", description: "Enter Button 5 Label", required: true, displayDuringSetup: false)
+		input("LabelButton6", "string", title:"Button 6 Label", description: "Enter Button 6 Label", required: true, displayDuringSetup: false)
+		input("LabelButton7", "string", title:"Button 7 Label", description: "Enter Button 7 Label", required: true, displayDuringSetup: false)
+		input("LabelButton8", "string", title:"Button 8 Label", description: "Enter Button 8 Label", required: true, displayDuringSetup: false)
+	}
+    
 	tiles {
 		standardTile("button", "device.button") {
 			state "default", label: "", icon: "st.unknown.zwave.remote-controller", backgroundColor: "#ffffff"
 		}
  		standardTile("push1", "device.button", width: 1, height: 1, decoration: "flat") {
-			state "default", label: "Push 1", backgroundColor: "#ffffff", action: "push1"
+			state "default", label: '${LabelButton1}', backgroundColor: "#ffffff", action: "push1"
 		}
  		standardTile("push2", "device.button", width: 1, height: 1, decoration: "flat") {
-			state "default", label: "Push 2", backgroundColor: "#ffffff", action: "push2"
+			state "default", label: '${LabelButton2}', backgroundColor: "#ffffff", action: "push2"
 		}
  		standardTile("push3", "device.button", width: 1, height: 1, decoration: "flat") {
-			state "default", label: "Push 3", backgroundColor: "#ffffff", action: "push3"
+			state "default", label: '${LabelButton3}', backgroundColor: "#ffffff", action: "push3"
 		}
  		standardTile("push4", "device.button", width: 1, height: 1, decoration: "flat") {
-			state "default", label: "Push 4", backgroundColor: "#ffffff", action: "push4"
+			state "default", label: '${LabelButton4}', backgroundColor: "#ffffff", action: "push4"
 		}
  		standardTile("dummy1", "device.button", width: 1, height: 1, decoration: "flat") {
 			state "default", label: " ", backgroundColor: "#ffffff", action: "hold1"
 		}
  		standardTile("push5", "device.button", width: 1, height: 1, decoration: "flat") {
-			state "default", label: "Push 5", backgroundColor: "#ffffff", action: "push5"
+			state "default", label: '${LabelButton5}', backgroundColor: "#ffffff", action: "push5"
 		}
  		standardTile("push6", "device.button", width: 1, height: 1, decoration: "flat") {
-			state "default", label: "Push 6", backgroundColor: "#ffffff", action: "push6"
+			state "default", label: '${LabelButton6}', backgroundColor: "#ffffff", action: "push6"
 		}
  		standardTile("dummy2", "device.button", width: 1, height: 1, decoration: "flat") {
 			state "default", label: " ", backgroundColor: "#ffffff", action: "hold1"
 		}
  		standardTile("push7", "device.button", width: 1, height: 1, decoration: "flat") {
-			state "default", label: "Reset", backgroundColor: "#ffffff", action: "push7"
+			state "default", label: '${LabelButton7}', backgroundColor: "#ffffff", action: "push7"
 		}
  		standardTile("push8", "device.button", width: 1, height: 1, decoration: "flat") {
-			state "default", label: "Off", backgroundColor: "#ffffff", action: "push8"
+			state "default", label: '${LabelButton8}', backgroundColor: "#ffffff", action: "push8"
 		}
 
 		main "button"
