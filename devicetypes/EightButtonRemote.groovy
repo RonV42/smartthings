@@ -15,7 +15,7 @@
  *
  */
 metadata {
-	definition (name: "8 Button Remote", namespace: "RonV42", author: "RonV42") {
+	definition (name: "Eight Button Remote", namespace: "RonV42", author: "RonV42") {
 		capability "Actuator"
 		capability "Button"
 		capability "Holdable Button"
