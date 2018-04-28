@@ -9,6 +9,9 @@
  *  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed
  *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License
  *  for the specific language governing permissions and limitations under the License.
+ * 
+ *  Change History
+ *  4/28/2018 - Created 8 button remote and removed all hold events except for dummy buttons
  *
  */
 metadata {
